@@ -1,0 +1,82 @@
+\documentclass[%
+  fontsize=12pt, % Schriftgröße
+  version=last%  % Neueste Version von KOMA-Skript verwenden
+]{scrlttr2}
+
+% ===== Deutsche Sprache =====
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+% ============================
+
+\LoadLetterOption{DIN} % Einstellungen für DIN 676 laden
+
+\LoadLetterOption{absender} % Absenderdaten und -einstellungen aus absender.lco laden
+
+\usepackage{graphicx} % Um Grafiken (bspw. das Logo) einbinden zu können
+
+\begin{document}
+
+\begin{letter}{%
+% ===== Zielanschrift =====
+  Amtsgericht Idstein\\
+  Betreuungsgericht\\
+  Postfach 1340\\
+  65503 Idstein\\
+  Fax: 06126 936565%
+% =======================
+}
+
+% ====== Geschäftszeichenzeile =========
+\setkomavar{yourref}{}          % Ihr Zeichen
+\setkomavar{yourmail}{}         % Ihr Schreiben vom
+\setkomavar{myref}{}            % Unser Zeichen
+\setkomavar{customer}{}         % Kundennummer
+\setkomavar{invoice}{}          % Rechnungsnummer
+\setkomavar{place}{Glashütten} % Ort
+\setkomavar{date}{\today}       % Datum
+% =====================================
+
+%\setkomavar{title}{Titel}
+ 
+\setkomavar{subject}{Betreff: Verlängerungsantrag zu Genehmigung einer geschlossenen Unterbringung Aktenzeichen: 21 XVII 102/20 - Genehmigung einer geschlossenen Heim-Unterbringung für 6 Monate }
+
+\opening{Sehr geehrte Damen und Herren,}
+
+Meine Ehefrau Dr. Ioana Popp-Weber befindet sich seit dem 24.08.2020 in der Vitos Rheingau Klinik, Kloster-Eberbach-Straße 4, 65346 Eltville. Z.Zt lebt sie im Haus 12 Station E16 (geschlossene Abteilung Geronto-Psychiatrie).
+
+In Ergänzung des Antrages zur Genehmigung einer geschlossenen Unterbringung, Aktenzeichen 21 XVII 102/20, beantrage ich die Genehmigung einer geschlossenen Heim-Unterbringung für 6 Monate im
+\\
+\\
+SCIVIAS St. Valentinushaus
+\\
+\\
+Haus Valentin \\
+Suttonstr. 24 \\
+65399 Kiedrich im Rheingau
+
+
+
+\closing{Mit freundlichen Grüßen,}
+
+% ===== Postskriptum =====
+%\ps PS: \dots
+% ========================
+
+% ===== Anlage(n) =====
+% \setkomavar*{enclseparator}{Anlage}
+%\encl{%
+%  Anlage 1\\
+%  Anlage 2 Opernkarten und 5.- Euro%
+%}
+% ===================
+
+% ===== Verteiler =====
+% \setkomavar*{ccseparator}{Kopie an}
+%\cc{%
+%  Verteiler 1\\
+%  Verteiler 2%
+%}
+% =====================
+
+\end{letter}
+\end{document}
